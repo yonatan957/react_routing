@@ -24,9 +24,10 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  /* display: flex;
+  place-items: center; */
+  /* min-width: 320px; */
+  width: 100vw;
   min-height: 100vh;
 }
 
@@ -65,4 +66,45 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+}
+
+a{
+  padding: 5px 15px;
+  color: #000;
+  cursor: pointer;
+}
+
+a.active{
+  background-color: #000;
+  color: #ffffff;
+}
+
+.nav{
+  display: flex;
+  flex-direction: column;
+}
+
+.nav>*{
+  padding:3px 10px;
+}
+
+.main{
+  display: flex;
+  height: 100%;
+}
+
+.left{
+  width: 120px;
+  height: 100%;
+  border-right: 3px solid;
+}
+
+.right{
+  flex-grow: 1;
+  padding-left: 15px;
 }
