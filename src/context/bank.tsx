@@ -1,7 +1,7 @@
 import { createContext } from "react";
 import Bank from "../types/bank";
 
-const BankContext = createContext<Bank|undefined>({
+const BankContext = createContext<Bank>({
     treasure:10000,
     users:[
         {name:"yo",account_id:'12345'},
